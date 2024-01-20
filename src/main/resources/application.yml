@@ -1,0 +1,10 @@
+feign:
+  url: localhost:8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: 8081
+server:
+  port: 8081
