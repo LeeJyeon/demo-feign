@@ -1,5 +1,5 @@
 {
-  "providerId": "CUSTOM-providerId",
+  "providerId": "${{providerId}}",
   "item": {
     "itemId": "test-item-id",
     "price": 1000

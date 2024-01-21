@@ -34,8 +34,7 @@ class UseFeignControllerTest {
 
         Path file = ResourceUtils.getFile("classpath:test-payload/sample.json").toPath();
         String fileContent = new String(Files.readAllBytes(file));
-        fileContent = fileContent.replaceAll("CUSTOM-providerId", providerId);
-
+        fileContent = fileContent.replaceAll("\\$\\{\\{providerId\\}\\}", providerId);
 
         stubFor(
                 get(urlEqualTo("/provide/"+providerId))
