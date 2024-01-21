@@ -1,0 +1,7 @@
+{
+  "providerId": "CUSTOM-providerId",
+  "item": {
+    "itemId": "test-item-id",
+    "price": 1000
+  }
+}
